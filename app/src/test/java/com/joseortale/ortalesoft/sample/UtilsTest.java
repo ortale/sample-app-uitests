@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MainActivityTest {
+public class UtilsTest {
     @Test
     public void input_isFirstLetterCorrect() {
         String test = "Async";
@@ -19,6 +19,6 @@ public class MainActivityTest {
     public void input_isWrongLetterCorrect() {
         String test = "0sync";
 
-        assertTrue(!Utils.validateFirstLetter(test));
+        assertFalse(Utils.validateFirstLetter(test));
     }
 }
